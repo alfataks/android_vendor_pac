@@ -14,8 +14,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
   ro.config.alarm_alert=Cesium.ogg
 
 # Copy specific ROM files
-PRODUCT_COPY_FILES += \
-    vendor/pac/prebuilt/common/apk/GooManager.apk:system/app/GooManager.apk
+#PRODUCT_COPY_FILES += \
+#    vendor/pac/prebuilt/common/apk/GooManager.apk:system/app/GooManager.apk
 
 # Backup Tool
 PRODUCT_COPY_FILES += \
@@ -28,9 +28,9 @@ include vendor/pa/config/themes_common.mk
 
 # PAC Packages
 PRODUCT_PACKAGES += \
-    GooglePacman \
-    PacStats \
-	PacPapers
+    PacStats
+#    GooglePacman \
+#    PacPapers
 
 # PAC Overlays
 PRODUCT_PACKAGE_OVERLAYS += vendor/pac/overlay/pac/common
@@ -45,16 +45,17 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     PerformanceControl \
     ROMControl \
-    SwagPapers \
     PermissionsManager
+#    SwagPapers \
+
 # AOKP Overlays
 PRODUCT_PACKAGE_OVERLAYS += vendor/pac/overlay/aokp/common
 
 ### PARANOID ###
 # PARANOID Packages
 PRODUCT_PACKAGES += \
-    HALO \
-    ParanoidWallpapers
+    HALO
+#    ParanoidWallpapers
 
 # ParanoidAndroid Overlays
 PRODUCT_PACKAGE_OVERLAYS += vendor/pa/overlay/common

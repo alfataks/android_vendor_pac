@@ -148,3 +148,6 @@ add_lunch_combo pac_jem-userdebug
 # HTC-legacy
 add_lunch_combo pac_marvel-userdebug
 add_lunch_combo pac_villec2-userdebug
+# Huawei
+add_lunch_combo pac_s7-userdebug
+add_lunch_combo pac_hws7300u-userdebug
