@@ -91,23 +91,12 @@ rm -rf $REPACK/ota/recovery
 
 # Determine what to name the new signed package
 if [ -z "$CYANOGEN_NIGHTLY" ]; then
-	PAVERSION=`grep 'ro.modversion=' $REPACK/ota/system/build.prop | sed -e 's/ro.modversion=//g'`
-        OVERLAYTARGET=`grep 'ro.pa.family=' $REPACK/ota/system/build.prop | sed -e 's/ro.pa.family=//g'`
-	: ${PAVERSION:=nightly}
 	PACVERSION=`grep 'ro.pacrom.version=' $REPACK/ota/system/build.prop | sed -e 's/ro.pacrom.version=//g'`
 	OUTFILE=$OUT/$PACVERSION.zip
 	echo PACVERSION: $PACVERSION
 else
 	OUTFILE=$OUT/update-squished.zip
 fi
-
-# Copy ParanoidPreferences overlays
-printf "Copying overlay preferences for $OVERLAYTARGET..."
-echo
-mkdir $REPACK/ota/system/etc/paranoid/preferences
-mkdir $REPACK/ota/system/etc/paranoid/preferences/images
-cp -r $ANDROID_BUILD_TOP/vendor/pa/prebuilt/preferences/images/* $REPACK/ota/system/etc/paranoid/preferences/images/
-cp -r $ANDROID_BUILD_TOP/vendor/pac/prebuilt/pa/preferences/$OVERLAYTARGET/* $REPACK/ota/system/etc/paranoid/preferences/
 
 # Pack it up and sign
 printf "Zipping package..."
@@ -132,6 +121,17 @@ $MD5 $img >$img.md5sum
 echo
 echo "Package complete: $OUTFILE"
 cat $img.md5sum
+MD5VAL=`cat $img.md5sum  | awk '{ print $1 }'`
+DEVICE=`echo $TARGET_PRODUCT | cut -d "_" -f 2`
+#OTA link for ease of use !
+echo
+echo "Use This link in a browser after uploading the the zip to your req'd host"
+echo "If you do not know the password ask in the normal places"
+echo "---------------- LINK ----------------"
+echo "http://pac-rom.com/ota/?device=$DEVICE&version=$PACVERSION&md5=$MD5VAL"
+echo "-------------- END LINK --------------"
+echo "be sure to make sure you use a direct linkable host"
+echo "got probs with the OTA contact pvyParts in hangouts"
 echo
 )
 

@@ -33,6 +33,7 @@ add_lunch_combo pac_zeus-userdebug
 add_lunch_combo pac_captivatemtd-userdebug
 add_lunch_combo pac_fascinatemtd-userdebug
 add_lunch_combo pac_galaxysmtd-userdebug
+add_lunch_combo pac_i777-userdebug
 add_lunch_combo pac_i9100-userdebug
 add_lunch_combo pac_i9103-userdebug
 add_lunch_combo pac_i9100g-userdebug
@@ -73,12 +74,12 @@ add_lunch_combo pac_runnymede-userdebug
 add_lunch_combo pac_fireball-userdebug
 add_lunch_combo pac_jewel-userdebug
 add_lunch_combo pac_evita-userdebug
+add_lunch_combo pac_endeavoru-userdebug
 add_lunch_combo pac_ville-userdebug
-add_lunch_combo pac_m7-userdebug
 add_lunch_combo pac_m7ul-userdebug
 add_lunch_combo pac_m7att-userdebug
 add_lunch_combo pac_m7tmo-userdebug
-add_lunch_combo pac_m7wls-userdebug
+add_lunch_combo pac_m7spr-userdebug
 # Samsung 2010
 add_lunch_combo pac_epicmtd-userdebug
 # Samsung 2013
@@ -92,6 +93,7 @@ add_lunch_combo pac_d2vzw-userdebug
 add_lunch_combo pac_i605-userdebug
 add_lunch_combo pac_i9300-userdebug
 add_lunch_combo pac_i9305-userdebug
+add_lunch_combo pac_i9500-userdebug
 add_lunch_combo pac_jflteatt-userdebug
 add_lunch_combo pac_jfltecan-userdebug
 add_lunch_combo pac_jfltecri-userdebug
@@ -103,8 +105,10 @@ add_lunch_combo pac_jfltevzw-userdebug
 add_lunch_combo pac_jfltexx-userdebug
 add_lunch_combo pac_l900-userdebug
 add_lunch_combo pac_t0lte-userdebug
+add_lunch_combo pac_t0ltetmo-userdebug
 add_lunch_combo pac_n7000-userdebug
 add_lunch_combo pac_n7100-userdebug
+add_lunch_combo pac_quincyatt-userdebug
 add_lunch_combo pac_venturi-userdebug
 add_lunch_combo pac_ypg1-userdebug
 # Samsung & LGE Legacy Devices
@@ -121,6 +125,7 @@ add_lunch_combo pac_p970-userdebug
 add_lunch_combo pac_primoc-userdebug
 add_lunch_combo pac_primou-userdebug
 # LGE
+add_lunch_combo pac_e975-userdebug
 add_lunch_combo pac_p760-userdebug
 add_lunch_combo pac_p880-userdebug
 add_lunch_combo pac_p930-userdebug
@@ -137,9 +142,12 @@ add_lunch_combo pac_umts_spyder-userdebug
 add_lunch_combo pac_solana-userdebug
 add_lunch_combo pac_vanquishgsm-userdebug
 add_lunch_combo pac_scorpionmini-userdebug
+add_lunch_combo pac_xt897-userdebug
+add_lunch_combo pac_xt897c-userdebug
 # Asus device
 add_lunch_combo pac_tf300t-userdebug
 add_lunch_combo pac_tf201-userdebug
+add_lunch_combo pac_tf700t-userdebug
 # Amazon
 add_lunch_combo pac_otter-userdebug
 add_lunch_combo pac_otter2-userdebug
@@ -148,3 +156,5 @@ add_lunch_combo pac_jem-userdebug
 # HTC-legacy
 add_lunch_combo pac_marvel-userdebug
 add_lunch_combo pac_villec2-userdebug
+# Huawei
+add_lunch_combo pac_u8800pro-userdebug
