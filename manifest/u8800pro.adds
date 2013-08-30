@@ -1,0 +1,9 @@
+[
+    {
+        "remote":       "github",
+        "account":      "CMu8800pro",
+        "repository":   "android_hardware_qcom_display-legacy",
+        "target_path":  "hardware/qcom/display-legacy",
+        "revision":     "cm-10.2"
+    }
+]
