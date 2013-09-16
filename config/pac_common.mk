@@ -13,10 +13,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
   ro.config.notification_sound=Proxima.ogg \
   ro.config.alarm_alert=Cesium.ogg
 
-# Copy specific ROM files
-#PRODUCT_COPY_FILES += \
-#    vendor/pac/prebuilt/common/apk/GooManager.apk:system/app/GooManager.apk
-
 # Backup Tool
 PRODUCT_COPY_FILES += \
     vendor/pac/prebuilt/common/bin/backuptool.sh:system/bin/backuptool.sh \
@@ -25,12 +21,6 @@ PRODUCT_COPY_FILES += \
 
 # T-Mobile theme engine
 include vendor/pa/config/themes_common.mk
-
-# PAC Packages
-PRODUCT_PACKAGES += \
-    PacStats
-#    GooglePacman \
-#    PacPapers
 
 # PAC Overlays
 PRODUCT_PACKAGE_OVERLAYS += vendor/pac/overlay/pac/common
@@ -46,7 +36,6 @@ PRODUCT_PACKAGES += \
     PerformanceControl \
     ROMControl \
     PermissionsManager
-#    SwagPapers \
 
 # AOKP Overlays
 PRODUCT_PACKAGE_OVERLAYS += vendor/pac/overlay/aokp/common
@@ -55,7 +44,6 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/pac/overlay/aokp/common
 # PARANOID Packages
 PRODUCT_PACKAGES += \
     HALO
-#    ParanoidWallpapers
 
 # ParanoidAndroid Overlays
 PRODUCT_PACKAGE_OVERLAYS += vendor/pa/overlay/common
